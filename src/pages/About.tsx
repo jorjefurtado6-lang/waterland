@@ -41,7 +41,7 @@ export default function About() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&q=80&w=600" className="rounded-2xl shadow-lg mt-8" alt="Pool work" referrerPolicy="no-referrer" />
-              <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=600" className="rounded-2xl shadow-lg" alt="Pool renovation" referrerPolicy="no-referrer" />
+              <img src="https://drive.google.com/thumbnail?id=1_OE0sqKKohsbht0yTj-EtM556Ta0JwZY&sz=w1000" className="rounded-2xl shadow-lg" alt="Pool renovation" referrerPolicy="no-referrer" />
             </div>
           </div>
         </div>
