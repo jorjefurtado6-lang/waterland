@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -24,8 +24,7 @@ export default function Footer() {
               {t('footer_description')}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-brand-light transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-brand-light transition-colors"><Instagram size={20} /></a>
+              <a href="https://www.instagram.com/waterland_pools/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-light transition-colors"><Instagram size={20} /></a>
             </div>
           </div>
 
