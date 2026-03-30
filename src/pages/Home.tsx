@@ -2,7 +2,6 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion } from 'motion/react';
 import { Droplets, ShieldCheck, Clock, Users, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import EstimateForm from '../components/EstimateForm';
 
 export default function Home() {
@@ -49,9 +48,9 @@ export default function Home() {
               <a href="#estimate" className="btn-primary">
                 {t('cta_estimate')}
               </a>
-              <Link to="/services" className="btn-secondary border-white text-white hover:bg-white hover:text-brand-dark">
+              <a href="/services" className="btn-secondary border-white text-white hover:bg-white hover:text-brand-dark">
                 {t('nav_services')}
-              </Link>
+              </a>
             </div>
           </motion.div>
 
@@ -77,9 +76,9 @@ export default function Home() {
               <p className="text-lg text-slate-600 leading-relaxed">
                 {t('home_intro_text')}
               </p>
-              <Link to="/about" className="inline-flex items-center text-brand-light font-bold hover:underline">
+              <a href="/about" className="inline-flex items-center text-brand-light font-bold hover:underline">
                 {t('home_learn_more')} <ChevronRight size={20} />
-              </Link>
+              </a>
             </div>
             <div className="relative">
               <img 
@@ -116,17 +115,17 @@ export default function Home() {
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold text-brand-dark mb-4">{service.title}</h3>
-                <Link to={service.path} className="text-brand-light font-semibold text-sm hover:underline flex items-center">
+                <a href={service.path} className="text-brand-light font-semibold text-sm hover:underline flex items-center">
                   {t('cta_view_details')} <ChevronRight size={16} />
-                </Link>
+                </a>
               </motion.div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <Link to="/services" className="btn-secondary">
+            <a href="/services" className="btn-secondary">
               {t('cta_view_all')}
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -169,9 +168,9 @@ export default function Home() {
             <div className="bg-white/5 backdrop-blur-lg p-12 rounded-3xl border border-white/10 text-center space-y-6">
               <h3 className="text-3xl font-bold">{t('home_ready_title')}</h3>
               <p className="text-slate-300">{t('home_ready_subtitle')}</p>
-              <Link to="/contact" className="btn-primary inline-block w-full">
+              <a href="/contact" className="btn-primary inline-block w-full">
                 {t('cta_schedule')}
-              </Link>
+              </a>
             </div>
           </div>
         </div>

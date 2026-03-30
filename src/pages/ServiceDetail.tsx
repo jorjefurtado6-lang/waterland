@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, CheckCircle2 } from 'lucide-react';
 
 interface ServiceDetailProps {
@@ -43,9 +42,9 @@ export default function ServiceDetail({ title, subtitle, description, included, 
                 <p className="text-slate-600 leading-relaxed text-lg">
                   {description}
                 </p>
-                <Link to="/contact" className="btn-primary inline-block">
+                <a href="/contact" className="btn-primary inline-block">
                   {t('form_submit')}
-                </Link>
+                </a>
               </div>
 
               <div className="space-y-6">
